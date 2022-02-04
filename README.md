@@ -1,21 +1,34 @@
-## Add more
+# Intention
 
-1. Sertings.gradle
-   change `repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)`
+This repository is an example of a basic android application with 2 activities inside which I added a React Native activity.
+The [React Native documentation](https://reactnative.dev/docs/integration-with-existing-apps) about it is not updated, so I tried to make it work for the latest React Native version (0.67.2).
 
-2. Pb with printenv in android studio
+I started from the [Android tutorial](https://developer.android.com/training/basics/firstapp/creating-project), then I added an Activity with a React Native View
 
-```
-Caused by: java.io.IOException: Cannot run program “node”: error=2, No such file or directory
+# Usage
 
-```
+## Prerequisites
 
-Then run:
+- [React Native environnement configured](https://reactnative.dev/docs/environment-setup):
+  - yarn
+  - node
+- Android Studio installed
+- Java SDK 11 downloaded
 
-`chmod +x /Applications/Android\ Studio.app/Contents/bin/printenv`
+## Install
 
-3. set the JDK version to 11 in gradle settigngs (View > Tools > Gradle)
+- Run `yarn install` in the root folder
 
-4. add google() in settings.gradle
+## Launch the application
 
-5. run `yarn react-native run-android`to generate PackageList. It resolves the android studio error
+- run `yarn react-native run-android` to launch the android application
+  It will:
+
+1. launch the metro bundler to bundle your javascript code
+2. build your android native code
+3. install the builded application on your device or your simulator
+4. launch the application
+
+## Develope
+
+You can modify the [index.js](./index.js) file to see your modification in real-time thanks to the hot-reload!

@@ -1,10 +1,14 @@
 {
-  "name": "MyReactNativeApp",
+  "name": "android-app-with-react-native-activity",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Guillaume Piedigrossi <guillaume.piedigrossi@gadz.org>",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "start": "yarn react-native run-android",
+    "start:bundler": "yarn react-native start"
+  },
   "dependencies": {
     "react": "17.0.2",
     "react-native": "^0.67.2"
