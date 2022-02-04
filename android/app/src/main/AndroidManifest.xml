@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".ReactActivity"
+            android:exported="false" />
+        <activity
             android:name=".DisplayMessageActivity"
-            android:exported="false" >
+            android:exported="false">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
