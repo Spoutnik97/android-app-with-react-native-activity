@@ -1,0 +1,12 @@
+{
+  "name": "MyReactNativeApp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Guillaume Piedigrossi <guillaume.piedigrossi@gadz.org>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "17.0.2",
+    "react-native": "^0.67.2"
+  }
+}
